@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
    <children>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
@@ -24,7 +23,7 @@
           <RowConstraints maxHeight="313.0" minHeight="10.0" prefHeight="290.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <ListView fx:id="dataListLV" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ListView fx:id="resultListLV" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <GridPane GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -54,8 +53,9 @@
                   <TextField fx:id="textSampleTF" />
                </children>
             </GridPane>
-            <ListView fx:id="resultListLV" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <ListView fx:id="dataListLV" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
             <Button fx:id="loadFilesBT" mnemonicParsing="false" onAction="#loadFilesBTclick" prefHeight="25.0" prefWidth="640.0" text="Load Files" />
+            <Button fx:id="testBT" mnemonicParsing="false" onAction="#testBTclick" text="TEST" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
          <padding>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
